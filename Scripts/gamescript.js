@@ -1,66 +1,208 @@
-var categories = ['Unity', 'Chapter Questions', 'Adobe Animate', 'Visual Studio', 'Copyright'];
+// type GameData = {
+//   [category: string]: {
+//     clues: {
+//       question: { type: ['text', 'video'], text?: string,  videoUrl?: string },
+//       answer: { type: ['text', 'video'], text?: string,  videoUrl?: string }
+//     }[]
+//   }
+// }
+
+var gameData = {
+  'Unity': {
+    clues: [
+      {
+        question: { 
+          type: 'video',
+          videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+          text: ''
+        },
+        answer: { 
+          type: 'text',
+          text: 'What is "W"?',
+          videoUrl: ''
+        }
+      },
+      {
+        question: { text: 'This needs to be done before starting the LEGO™ micro-game.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is verifying your age?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is the the default shortcut for the scale tool.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "T"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is where you interact with the game being built.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is the scene view?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is the button that allows you to change your camera orientation.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "alt"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is the the default shortcut for the select tool.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "V"?', type: 'text', videoUrl: '' }
+      }
+    ]
+  },
+  'Chapter Questions': {
+    clues: [
+      {
+        question: { text: 'This person creates the controls for the player.', type: 'text', videoUrl: '' },
+        answer: { text: 'Who is the user interface designer?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This generation is when home video game systems became popular.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is Generation 2?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This person creates character depth and interaction.', type: 'text', videoUrl: '' },
+        answer: { text: 'Who is the game writer?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: "This perspective has you looking through the character's eyes.", type: 'text', videoUrl: '' },
+        answer: { text: 'What is first person perspective?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This person creates the visual elements and assets of the game.', type: 'text', videoUrl: '' },
+        answer: { text: 'Who is the art designer?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is the term for what that makes a product different from the competion.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is the unique selling pont (USP)?', type: 'text', videoUrl: '' }
+      }
+    ]
+  },
+  'Adobe Animate': {
+    clues: [
+      {
+        question: { text: 'This is the shortcut for undo.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "Ctrl+Z"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This the button to insert a keyframe.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "F6"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This the button to make a symbol.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "F8"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is the shortcut to group things together.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "ctrl+g"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is the shortcut for the scale tool.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "V"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This was a tool used to make Alfonso\'s tail.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is a brush?', type: 'text', videoUrl: '' }
+      }
+    ]
+  },
+  'Visual Studio': {
+    clues: [
+      {
+        question: { text: 'This is what you end a line of code with.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is capitalization?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is what you need to keep in mind when naming and calling variables.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is ";"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is the way to print to the console in C#.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "Console.WriteLine()"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is used to comment a line of code in C#.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "//"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This is the process of finding and fixing errors in your code.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is debugging?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This the button that is pushed to auto complete part of a line of code.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is enter (or tab)?', type: 'text', videoUrl: '' }
+      }
+    ]
+  },
+  'Copyright': {
+    clues: [
+      {
+        question: { text: 'This is the symbol for copyright.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is "©"?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This allows for complete use of the work without any extra steps needed.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is public domain?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This requires you to share a work with the same licenses attached.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is share-alike?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This prevents you from making changes to the work.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is non-derivative?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This prevents you from using the work for profit.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is non-commercial?', type: 'text', videoUrl: '' }
+      },
+      {
+        question: { text: 'This requires you to give credit.', type: 'text', videoUrl: '' },
+        answer: { text: 'What is attribution?', type: 'text', videoUrl: '' }
+      }
+    ]
+  }
+};
+
+// Get categories as an array for easy access
+var categories = Object.keys(gameData);
+
 var questions = [
-  ['This is the shortcut for the move tool.', 
-  'This needs to be done before starting the LEGO™ micro-game.', 
-  'This is the the default shortcut for the scale tool.', 
-  'This is where you interact with the game being built.', 
-  'This is the button that allows you to change your camera orientation.', 
-  'This is the the default shortcut for the select tool.'],
-  ['This person creates the controls for the player.', 
-  'This generation is when home video game systems became popular.', 
-  'This person creates character depth and interaction.', 
-  "This perspective has you looking through the character's eyes.", 
-  'This person creates the visual elements and assets of the game.', 
-  'This is the term for what that makes a product different from the competion.'],
-  ['This is the shortcut for undo.', 
-  'This the button to insert a keyframe. ', 
-  'This the button to make a symbol.', 
-  'This is the shortcut to group things together.', 
-  'This is the shortcut for the scale tool.', 
-  'This was a tool used to make Alfonso\'s tail.'],
-  ['This is what you end a line of code with.', 
-  'This is what you need to keep in mind when naming and calling variables.', 
-  'This is the way to print to the console in C#.', 
-  'This is used to comment a line of code in C#.', 
-  'This is the process of finding and fixing errors in your code.', 
-  'This the button that is pushed to auto complete part of a line of code.'],
-  ['This is the symbol for copyright.', 
-  'This allows for complete use of the work without any extra steps needed.', 
-  'This requires you to share a work with the same licenses attached.', 
-  'This prevents you from making changes to the work.', 
-  'This prevents you from using the work for profit.', 
-  'This requires you to give credit.']];
-var answers = [
-  ['What is "W"?', 
-  'What is verifying your age?', 
-  'What is "T"?', 
-  'What is the scene view?', 
-  'What is "alt"?', 
-  'What is "V"?'],
-  ['Who is the user interface designer?', 
-  'What is Generation 2?', 
-  'Who is the game writer?', 
-  'What is first person perspective?', 
-  'Who is the art designer?', 
-  'What is the unique selling pont (USP)?'],
-  ['What is "Ctrl+Z"?', 
-  'What is "F6"?', 
-  'What is "F8"?', 
-  'What is "ctrl+g"?', 
-  'What is "V"?', 
-  'What is a brush?'],
-  ['What is capitalization?', 
-  'What is ";"?', 
-  'What is "Console.WriteLine()"?', 
-  'What is "//"?', 
-  'What is debugging?', 
-  'What is enter (or tab)?'],
-  ['What is "©"?', 
-  'What is public domain?', 
-  'What is share-alike?', 
-  'What is non-derivative?', 
-  'What is non-commercial?', 
-  'What is attribution?']];
+  [
+    { text: 'This is the shortcut for the move tool.', type: 'text', videoUrl: '' },
+    { text: 'This needs to be done before starting the LEGO™ micro-game.', type: 'text', videoUrl: '' },
+    { text: 'This is the the default shortcut for the scale tool.', type: 'text', videoUrl: '' },
+    { text: 'This is where you interact with the game being built.', type: 'text', videoUrl: '' },
+    { text: 'This is the button that allows you to change your camera orientation.', type: 'text', videoUrl: '' },
+    { text: 'This is the the default shortcut for the select tool.', type: 'text', videoUrl: '' }
+  ],
+  [
+    { text: 'This person creates the controls for the player.', type: 'text', videoUrl: '' },
+    { text: 'This generation is when home video game systems became popular.', type: 'text', videoUrl: '' },
+    { text: 'This person creates character depth and interaction.', type: 'text', videoUrl: '' },
+    { text: "This perspective has you looking through the character's eyes.", type: 'text', videoUrl: '' },
+    { text: 'This person creates the visual elements and assets of the game.', type: 'text', videoUrl: '' },
+    { text: 'This is the term for what that makes a product different from the competion.', type: 'text', videoUrl: '' }
+  ],
+  [
+    { text: 'This is the shortcut for undo.', type: 'text', videoUrl: '' },
+    { text: 'This the button to insert a keyframe.', type: 'text', videoUrl: '' },
+    { text: 'This the button to make a symbol.', type: 'text', videoUrl: '' },
+    { text: 'This is the shortcut to group things together.', type: 'text', videoUrl: '' },
+    { text: 'This is the shortcut for the scale tool.', type: 'text', videoUrl: '' },
+    { text: 'This was a tool used to make Alfonso\'s tail.', type: 'text', videoUrl: '' }
+  ],
+  [
+    { text: 'This is what you end a line of code with.', type: 'text', videoUrl: '' },
+    { text: 'This is what you need to keep in mind when naming and calling variables.', type: 'text', videoUrl: '' },
+    { text: 'This is the way to print to the console in C#.', type: 'text', videoUrl: '' },
+    { text: 'This is used to comment a line of code in C#.', type: 'text', videoUrl: '' },
+    { text: 'This is the process of finding and fixing errors in your code.', type: 'text', videoUrl: '' },
+    { text: 'This the button that is pushed to auto complete part of a line of code.', type: 'text', videoUrl: '' }
+  ],
+  [
+    { text: 'This is the symbol for copyright.', type: 'text', videoUrl: '' },
+    { text: 'This allows for complete use of the work without any extra steps needed.', type: 'text', videoUrl: '' },
+    { text: 'This requires you to share a work with the same licenses attached.', type: 'text', videoUrl: '' },
+    { text: 'This prevents you from making changes to the work.', type: 'text', videoUrl: '' },
+    { text: 'This prevents you from using the work for profit.', type: 'text', videoUrl: '' },
+    { text: 'This requires you to give credit.', type: 'text', videoUrl: '' }
+  ]
+];
 
 var url = document.location.href,
   params = url.split('?')[1].split('&'),
@@ -128,12 +270,12 @@ function setupBoard() {
 
     var list = document.createElement('ul');
     list.className = 'list-group list-group-flush';
-    for (var j = 0; j < questions[i].length; j++) {
+    for (var j = 0; j < gameData[categories[i]].clues.length; j++) {
       var link = document.createElement('a');
       link.setAttribute('href', '');
       link.setAttribute('data-toggle', 'modal');
       link.setAttribute('data-target', '#questionModal');
-      link.setAttribute('data-category', i.toString())
+      link.setAttribute('data-category', categories[i]);
       link.setAttribute('data-money', ((j + 1) * 200).toString());
       link.setAttribute('data-questionid', j.toString());
       var listItem = document.createElement('li');
@@ -369,7 +511,14 @@ function ddbtn(){
 
     var modal = document.getElementById('questionModal');
     document.getElementById('questionModalLabel').innerHTML = (categories[ddCategory] + ' for $' + money);
-    document.getElementsByClassName('card-text')[0].innerHTML = (questions[ddCategory][ddQuestionID]);
+    var clue = gameData[ddCategory].clues[ddQuestionID];
+    var modalBody = modal.find('.modal-body');
+    
+    if (clue.question.type === 'video') {
+      modalBody.html('<div class="video-container"><iframe width="560" height="315" src="' + clue.question.videoUrl + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>');
+    } else {
+      modalBody.html('<p class="card-text">' + clue.question.text + '</p>');
+    }
     document.getElementById("bet-input").removeEventListener('keydown', function (event) {
       if (event.keyCode == 13) { // enter key
         event.preventDefault();
@@ -453,8 +602,15 @@ $(document).ready(function () {
     if (questionsLeft == dd){
       dailyDouble(category, questionid);
     }else{
-      modal.find('.modal-title').text(categories[category] + ' for $' + money);
-      modal.find('.modal-body p').text(questions[category][questionid]);
+      modal.find('.modal-title').text(category + ' for $' + money);
+      var clue = gameData[category].clues[questionid];
+      var modalBody = modal.find('.modal-body');
+      
+      if (clue.question.type === 'video') {
+        modalBody.html('<div class="video-container"><iframe width="560" height="315" src="' + clue.question.videoUrl + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>');
+      } else {
+        modalBody.html('<p class="card-text">' + clue.question.text + '</p>');
+      }
     }
   });
 
@@ -484,7 +640,15 @@ $(document).ready(function () {
   $('#reveal').click(function () {
     var modal = $(this);
     if (isAnsReveal == false) {
-      $('#questionModal').find('.modal-body p').text(answers[category][questionid]);
+      var clue = gameData[category].clues[questionid];
+      var modalBody = $('#questionModal').find('.modal-body');
+      
+      if (clue.answer.type === 'video') {
+        modalBody.html('<div class="video-container"><iframe width="560" height="315" src="' + clue.answer.videoUrl + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>');
+      } else {
+        modalBody.html('<p class="card-text">' + clue.answer.text + '</p>');
+      }
+      
       if (isHint) {
         document.getElementById("reveal").innerHTML = "Reveal Question (space)";
       } else {
@@ -493,7 +657,16 @@ $(document).ready(function () {
       isAnsReveal = true;
       return;
     }
-    $('#questionModal').find('.modal-body p').text(questions[category][questionid]);
+    
+    var clue = gameData[category].clues[questionid];
+    var modalBody = $('#questionModal').find('.modal-body');
+    
+    if (clue.question.type === 'video') {
+      modalBody.html('<div class="video-container"><iframe width="560" height="315" src="' + clue.question.videoUrl + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>');
+    } else {
+      modalBody.html('<p class="card-text">' + clue.question.text + '</p>');
+    }
+    
     isAnsReveal = false;
     if (isHint) {
       document.getElementById("reveal").innerHTML = "Reveal Answer (space)";

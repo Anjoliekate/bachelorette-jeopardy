@@ -1,19 +1,265 @@
+/* Modern Jeopardy! Styling */
+body {
+  background: #000;
+  font-family: novecento-sans, sans-serif;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.title h1 {
+  font-family: 'gyparodyregular';
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.card {
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(145deg, #0000ff, #0000cc);
+  border: none;
+  padding: 1.5rem;
+  border-radius: 15px 15px 0 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-header h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.list-group-item {
+  background: linear-gradient(145deg, #0000ff, #0000cc);
+  border: none;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.list-group-item:hover {
+  background: linear-gradient(145deg, #0000cc, #0000ff);
+}
+
+.list-group-item.disabled {
+  background: #1a1a1a;
+  color: #333;
+  cursor: not-allowed;
+}
+
+.modal-content {
+  background: linear-gradient(145deg, #0000ff, #0000cc);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-title {
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.card-text {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #e6e6e6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-success {
+  background: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger {
+  background: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.styled-table {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.styled-table th {
+  background: linear-gradient(145deg, #0000ff, #0000cc);
+  color: #fff;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.styled-table td {
+  padding: 1rem;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.s-table-text-active {
+  color: #ffcc00;
+  font-weight: 600;
+}
+
+.button-special {
+  background: linear-gradient(145deg, #0000ff, #0000cc);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.button-special:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#teamTurn {
+  color: #ffcc00;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.modal-team-selector {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.modal-team-selector select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+
+.modal-team-selector label {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+  
+  .card-header h2 {
+    font-size: 1rem;
+  }
+  
+  .card-text {
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
 .container-fluid {
     margin-top: 16px;
 }
 .list-group, .list-group-flush, .card, .card-header {
     border: none;
-}
-.card-header {
-    padding: 30px 0px;
-    background-color: blue;
-    border: 1px solid white;
-    border-radius: 50px;
-    margin: 5px;
-    color: rgb(255, 255, 255);
-    font-family: museo-sans, sans-serif;
-    font-weight: 700;
-    font-style: normal;
 }
 .list-group-item{
     padding: 5px 0px;
@@ -47,18 +293,6 @@ a:hover {
   text-align: center;
   color: white;
   font-size: 5rem;
-}
-.title {
-    text-align: center;
-    font-family: 'gyparodyregular';
-    color: white;
-    font-size: 4pc;
-}
-.card-text{
-    font-family: itc-benguiat, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size:24pt;
 }
 h2{
     font-family: novecento-sans, sans-serif;
@@ -101,32 +335,8 @@ p {
     font-weight: bold;
     color: blue;
 }
-.s-table-text-active{
-  color: rgb(255, 204, 0);
-}
 .top-table{
     width: 100%;
-}
-.card{
-  background-color: black;
-  margin: 10px;
-}
-.btn-primary{
-  background-color: rgb(255, 255, 255);
-  color: black;
-}
-.btn-primary:hover{
-  background-color: rgb(216, 216, 216);
-  color: black;
-}
-.btn{
-  font-family: novecento-sans, sans-serif;
-}
-#gameBoard{
-  background-color: black;
-}
-.card-header{
-  border-color: black;
 }
 .top-title{
   text-align: right;  
@@ -142,27 +352,14 @@ p {
     font-style: normal;
 }
 
-body{
-  background: black;
-}
-.modal-content{
-  background-color: blue;
-  color: white;
-  text-shadow: 2px 2px black;
-  margin-top: 10pc;
-  width: 100%;
-  height: 100%;
-}
-
-
 .modal-footer{
   visibility: show;
   text-align: center;
 }
 .modal-body{
   text-align: center;
-  
 }
+
 .hidden{
   visibility: hidden;
 }
@@ -204,7 +401,6 @@ body{
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-
 }
 .ddbtn{
   padding: 5px 5px;
