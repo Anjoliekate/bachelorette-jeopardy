@@ -1,8 +1,48 @@
-/* Modern Jeopardy! Styling */
+:root {
+  --theme-dark: #332539;
+  --theme-medium: #56486e;
+  --theme-light: #504168;
+  --theme-hover: #7a649d;
+  --theme-list-bg: rgb(114, 84, 139);
+  --theme-table-row: #4f3e50;
+  --theme-score-table: #3d3541;
+}
+
 body {
-  background: #000;
+  background: #4c3061;
   font-family: novecento-sans, sans-serif;
-  color: #fff;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  overflow-x: hidden;
+  background-color: #505050;
+  background-image: url("../Media/favicon/A-T.JPG");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 300px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-position: inherit;
+  background-size: inherit;
+  filter: blur(8px);
+  z-index: -1;
 }
 
 .title {
@@ -11,24 +51,24 @@ body {
 }
 
 .title h1 {
-  font-family: 'gyparodyregular';
+  font-family: "gyparodyregular";
   font-size: 4rem;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: -1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000,
+    2px 2px 0 #000;
   margin: 0;
 }
 
 .card {
-  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, var(--theme-dark), #2a2a2a);
+  border-radius: 7px;
+  box-shadow: 0 8px 16px rgba(170, 170, 170, 0.2);
   margin: 1rem;
   overflow: hidden;
 }
 
 .card-header {
-  background: linear-gradient(145deg, #0000ff, #0000cc);
+  background: linear-gradient(145deg, var(--theme-medium), var(--theme-light));
   border: none;
   padding: 1.5rem;
   border-radius: 15px 15px 0 0;
@@ -50,7 +90,7 @@ body {
 }
 
 .list-group-item {
-  background: linear-gradient(145deg, #0000ff, #0000cc);
+  background: linear-gradient(145deg, var(--theme-medium), var(--theme-light));
   border: none;
   color: #fff;
   padding: 1rem;
@@ -63,11 +103,11 @@ body {
   font-size: 2rem;
   font-weight: 600;
   margin: 0.5rem;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .list-group-item:hover {
-  background: linear-gradient(145deg, #0000cc, #0000ff);
+  background: linear-gradient(145deg, var(--theme-hover), var(--theme-medium));
 }
 
 .list-group-item.disabled {
@@ -77,14 +117,14 @@ body {
 }
 
 .modal-content {
-  background: linear-gradient(145deg, #0000ff, #0000cc);
+  background: linear-gradient(145deg, var(--theme-medium), var(--theme-light));
   border: none;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .modal-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
 }
 
 .modal-title {
@@ -174,7 +214,7 @@ body {
 }
 
 .styled-table th {
-  background: linear-gradient(145deg, #0000ff, #0000cc);
+  background: linear-gradient(145deg, var(--theme-medium), var(--theme-light));
   color: #fff;
   padding: 1rem;
   font-weight: 600;
@@ -184,6 +224,7 @@ body {
   padding: 1rem;
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--theme-score-table);
 }
 
 .s-table-text-active {
@@ -192,7 +233,7 @@ body {
 }
 
 .button-special {
-  background: linear-gradient(145deg, #0000ff, #0000cc);
+  background: linear-gradient(145deg, var(--theme-medium), var(--theme-light));
   color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -209,9 +250,10 @@ body {
 }
 
 #teamTurn {
-  color: #ffcc00;
+  color: #ffffff;
   font-size: 1.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .modal-team-selector {
@@ -240,15 +282,15 @@ body {
   .title h1 {
     font-size: 3rem;
   }
-  
+
   .card-header h2 {
     font-size: 1rem;
   }
-  
+
   .card-text {
     font-size: 1.5rem;
   }
-  
+
   .btn {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
@@ -256,138 +298,139 @@ body {
 }
 
 .container-fluid {
-    margin-top: 16px;
+  margin-top: 16px;
 }
-.list-group, .list-group-flush, .card, .card-header {
-    border: none;
-}
-.list-group-item{
-    padding: 5px 0px;
-    background-color: blue;
-    border: 1px solid white;
-    border-radius: 50px;
-    margin: 5px;
-    color: rgb(255, 204, 0);
-    font-family: novecento-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.list-group-item:hover{
-    background-color: rgba(0, 0, 255, 0.87);
-}
-a:hover {
-    text-decoration: none;
+.list-group,
+.list-group-flush,
+.card,
+.card-header {
+  border: none;
 }
 .list-group-item {
-    font-size: 4rem;
+  padding: 5px 0px;
+  background-color: var(--theme-list-bg);
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 5px;
+  color: white;
+  font-family: novecento-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.list-group-item:hover {
+  background-color: rgba(0, 0, 255, 0.87);
+}
+a:hover {
+  text-decoration: none;
+}
+.list-group-item {
+  font-size: 4rem;
 }
 .list-group-item.disabled {
-    background-color: black;
-    color: black;
+  background-color: black;
+  color: black;
 }
 .isDisabled {
-    pointer-events: none;
-    cursor: not-allowed;
+  pointer-events: none;
+  cursor: not-allowed;
 }
-.team-order{
+.team-order {
   text-align: center;
   color: white;
   font-size: 5rem;
 }
-h2{
-    font-family: novecento-sans, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+h2 {
+  font-family: novecento-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 p {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 .styled-table {
-    border-collapse: collapse;
-    margin: 5px 0;
-    font-size: 1.5em;
-    text-align: center;
-    font-family: novecento-sans, sans-serif;
-    min-width: 50px;
-    color: white;
-    box-shadow: 0 0 20px rgba(247, 247, 247, 0.3);
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: novecento-sans, sans-serif;
+  min-width: 50px;
+  color: white;
+  box-shadow: 0 0 20px rgba(247, 247, 247, 0.3);
 }
 .styled-table thead tr {
-    background-color: blue;
-    color: #ffffff;
-    text-align: left;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  text-align: left;
 }
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
-    
+  padding: 12px 15px;
 }
 .styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 .styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+  background-color: var(--theme-table-row);
 }
 .styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid blue;
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 .styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: blue;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
-.top-table{
-    width: 100%;
+.top-table {
+  width: 100%;
 }
-.top-title{
-  text-align: right;  
+.top-title {
+  text-align: right;
 }
-.top-scoreboard{
+.top-scoreboard {
   text-align: left;
 }
 @font-face {
-    font-family: 'gyparodyregular';
-    src: url('Fonts/gyparody-webfont.woff2') format('woff2'),
-         url('Fonts/gyparody-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "gyparodyregular";
+  src: url("Fonts/gyparody-webfont.woff2") format("woff2"),
+    url("Fonts/gyparody-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.modal-footer{
+.modal-footer {
   visibility: show;
   text-align: center;
 }
-.modal-body{
+.modal-body {
   text-align: center;
 }
 
-.hidden{
+.hidden {
   visibility: hidden;
 }
-.card-text{
+.card-text {
   margin-top: 0px;
   font-size: 45px;
 }
 
-#tip{
+#tip {
   font-size: 20px;
   text-align: center;
 }
-.modal-tip{
+.modal-tip {
   border: 1px white;
 }
 
-#questionModalLabel{
- text-align: center;
-
-}
-.modal-content{
+#questionModalLabel {
   text-align: center;
 }
-.modal-dd-text{
+.modal-content {
+  text-align: center;
+}
+.modal-dd-text {
   font-family: novecento-sans, sans-serif;
   font-size: 20px;
 }
-.button-special{
+.button-special {
   background-color: rgb(255, 204, 0);
   border: none;
   color: black;
@@ -402,7 +445,7 @@ p {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-.ddbtn{
+.ddbtn {
   padding: 5px 5px;
   margin: 5px 5px;
   background-color: rgb(255, 204, 0);
@@ -418,17 +461,17 @@ p {
   transition-duration: 0.4s;
 }
 .button-special:hover {
-  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24),0 17px 30px 0 rgba(255, 255, 255, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24),
+    0 17px 30px 0 rgba(255, 255, 255, 0.19);
   background-color: rgb(255, 215, 56);
 }
-.bet-input{
+.bet-input {
   border: none;
   border-bottom: 5px solid rgb(255, 215, 56);
   background: blue;
   font-family: novecento-sans, sans-serif;
   text-align: center;
-  color:white;
-  
+  color: white;
 }
 select {
   background: blue;
@@ -437,11 +480,11 @@ select {
   color: rgb(255, 215, 56);
   font-family: novecento-sans, sans-serif;
 }
-label{
+label {
   color: white;
   font-family: novecento-sans, sans-serif;
   padding-right: 5px;
 }
-div{
+div {
   overflow: auto;
 }

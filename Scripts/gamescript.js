@@ -13,8 +13,8 @@ var gameData = {
       {
         question: {
           text: "This is the bride's go-to drink.",
-          type: "text",
-          videoUrl: "",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/Nt7SiILsJnI",
         },
         answer: {
           text: "What is a Spicy Margarita- with patron silver?",
@@ -26,8 +26,8 @@ var gameData = {
       {
         question: {
           text: "This is the bride's zodiac sign.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/v4w_mAolkiA",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/v4w_mAolkiA",
         },
         answer: { text: "What is Pisces/Aries?", type: "text", videoUrl: "" },
         rank: 2,
@@ -35,8 +35,8 @@ var gameData = {
       {
         question: {
           text: "The bride has watched this movie 10,000 times.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/gXFocRisWEU",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/gXFocRisWEU",
         },
         answer: { text: "What is Willy Wonka?", type: "text", videoUrl: "" },
         rank: 5,
@@ -44,8 +44,8 @@ var gameData = {
       {
         question: {
           text: "This is the bride's most expensive purchase (with her own money).",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/nuxg4nGn0hk",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/nuxg4nGn0hk",
         },
         answer: {
           text: "What is a Red Light Mask?",
@@ -56,12 +56,12 @@ var gameData = {
       },
       {
         question: {
-          text: "This is the bride's new last name.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/FljES6HdBOA",
+          text: "This is the bride’s favorite TV show.",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/OEwGE012G5I",
         },
-        answer: { text: "What is Houck?", type: "text", videoUrl: "" },
-        rank: 1,
+        answer: { text: "What is Gossip Girl?", type: "text", videoUrl: "" },
+        rank: 3,
       },
     ],
   },
@@ -70,8 +70,8 @@ var gameData = {
       {
         question: {
           text: "This is how many official boyfriends the bride has had.",
-          type: "text",
-          videoUrl: "",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/TM6UkDATqmg",
         },
         answer: { text: "What is 3?", type: "text", videoUrl: "" },
         rank: 5,
@@ -79,8 +79,8 @@ var gameData = {
       {
         question: {
           text: "This was the band she fangirled about as a kid.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/Od9DYuD7b2o",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/Od9DYuD7b2o",
         },
         answer: { text: "What is One Direction?", type: "text", videoUrl: "" },
         rank: 3,
@@ -88,8 +88,8 @@ var gameData = {
       {
         question: {
           text: "This is the amount of choirs Alysse was in in her senior year of high school.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/5zfsMM84N2E",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/5zfsMM84N2E",
         },
         answer: { text: "What is four choirs?", type: "text", videoUrl: "" },
         rank: 4,
@@ -97,8 +97,8 @@ var gameData = {
       {
         question: {
           text: "The bride has lived in this many states.",
-          type: "text",
-          videoUrl: "",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/rrnDB7l8_WU",
         },
         answer: { text: "What is 1?", type: "text", videoUrl: "" },
         rank: 2,
@@ -106,8 +106,8 @@ var gameData = {
       {
         question: {
           text: "This is the sport that the bride played in high school.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/YmorYFpqJKI",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/YmorYFpqJKI",
         },
         answer: { text: "What is Tennis?", type: "text", videoUrl: "" },
         rank: 1,
@@ -119,8 +119,8 @@ var gameData = {
       {
         question: {
           text: "This is the couple's favorite trip they have gone on together.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/x5a7XriAS70",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/x5a7XriAS70",
         },
         answer: { text: "What is Austin, TX?", type: "text", videoUrl: "" },
         rank: 5,
@@ -128,8 +128,8 @@ var gameData = {
       {
         question: {
           text: "This partner is the passenger princess.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/Hw1boK7MaOg",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/Hw1boK7MaOg",
         },
         answer: { text: "Who is Tommy?", type: "text", videoUrl: "" },
         rank: 3,
@@ -137,8 +137,8 @@ var gameData = {
       {
         question: {
           text: "This is where the couple met.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/h0EjKTWD3Ng",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/h0EjKTWD3Ng",
         },
         answer: {
           text: "Where is Alysse's apartment (near DSU campus)?",
@@ -150,11 +150,20 @@ var gameData = {
       {
         question: {
           text: "If it were a date night in or a date night out, this couple would choose to...",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/e8zg6__hFbU",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/e8zg6__hFbU",
         },
         answer: { text: "What is a night in?", type: "text", videoUrl: "" },
         rank: 2,
+      },
+      {
+        question: {
+          text: "This is the bride's new last name.",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/FljES6HdBOA",
+        },
+        answer: { text: "What is Houck?", type: "text", videoUrl: "" },
+        rank: 1,
       },
     ],
   },
@@ -163,26 +172,26 @@ var gameData = {
       {
         question: {
           text: "This is the term for a small wedding.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/w9j1l5lwNkY",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/w9j1l5lwNkY",
         },
         answer: { text: "What is an Elopement?", type: "text", videoUrl: "" },
-        rank: 1,
-      },
-      {
-        question: {
-          text: "This is the most popular month for weddings.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/GXr-NP_EMBk",
-        },
-        answer: { text: "What is October?", type: "text", videoUrl: "" },
         rank: 3,
       },
       {
         question: {
+          text: "This is the most popular month for weddings.",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/GXr-NP_EMBk",
+        },
+        answer: { text: "What is October?", type: "text", videoUrl: "" },
+        rank: 4,
+      },
+      {
+        question: {
           text: "This is the finger that the wedding ring is traditionally worn on.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/ZjUs54QO1fM",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/ZjUs54QO1fM",
         },
         answer: {
           text: "What is the left ring finger?",
@@ -194,21 +203,21 @@ var gameData = {
       {
         question: {
           text: "This anniversary year is traditionally called the 'silver anniversary'.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/Fxheo0tVjJY",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/Fxheo0tVjJY",
         },
         answer: {
           text: "What is the 25th year/anniversary?",
           type: "text",
           videoUrl: "",
         },
-        rank: 4,
+        rank: 5,
       },
       {
         question: {
           text: "In what country did the tradition of the white wedding dress originate?",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/Ilztp4lFFL0",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/Ilztp4lFFL0",
         },
         answer: { text: "Where is England?", type: "text", videoUrl: "" },
         rank: 5,
@@ -220,8 +229,8 @@ var gameData = {
       {
         question: {
           text: "This is the song the groom played while dabbing mid stream.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/Idy0YaHIszA",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/Idy0YaHIszA",
         },
         answer: {
           text: "What is Static by Steve Lacey?",
@@ -233,8 +242,8 @@ var gameData = {
       {
         question: {
           text: "This is the sport the groom played in high school.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/Fdtr7_k7N-I",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/Fdtr7_k7N-I",
         },
         answer: { text: "What is Wrestling?", type: "text", videoUrl: "" },
         rank: 3,
@@ -242,8 +251,8 @@ var gameData = {
       {
         question: {
           text: "This is the groom's streamer name.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/JMjxYUA_peY",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/JMjxYUA_peY",
         },
         answer: { text: "What is TidalFlux?", type: "text", videoUrl: "" },
         rank: 2,
@@ -251,11 +260,20 @@ var gameData = {
       {
         question: {
           text: "This is the groom's middle name.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/HynfZ5BXJRU",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/kUaJwrjDR9c",
         },
         answer: { text: "What is Andrew?", type: "text", videoUrl: "" },
         rank: 4,
+      },
+      {
+        question: {
+          text: "This is the groom’s favorite sport to watch recently.",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/QA6e0lS4cBg",
+        },
+        answer: { text: "What is Hockey?", type: "text", videoUrl: "" },
+        rank: 1,
       },
     ],
   },
@@ -264,8 +282,8 @@ var gameData = {
       {
         question: {
           text: "This was the groom's first job.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/ydMCHjB4Ucs",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/ydMCHjB4Ucs",
         },
         answer: { text: "What is McDonald’s?", type: "text", videoUrl: "" },
         rank: 1,
@@ -273,19 +291,41 @@ var gameData = {
       {
         question: {
           text: "This is where the groom is originally from.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/sceJlo_CRi4",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/sceJlo_CRi4",
         },
         answer: { text: "Where is Rochester, NY?", type: "text", videoUrl: "" },
         rank: 3,
       },
       {
         question: {
+          text: "This was the age of the groom's first kiss.",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/rkhaavWp1BE",
+        },
+        answer: { text: "What is 19?", type: "text", videoUrl: "" },
+        rank: 2,
+      },
+      {
+        question: {
           text: "This is the amount of times the groom moved growing up.",
-          type: "text",
-          videoUrl: "https://youtube.com/shorts/J-oe_uj_zjw",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/aEFR1UBoY0k",
         },
         answer: { text: "What is 20+ times?", type: "text", videoUrl: "" },
+        rank: 4,
+      },
+      {
+        question: {
+          text: "This is where the groom went to college (Hint there are 2 of them).",
+          type: "video",
+          videoUrl: "https://www.youtube.com/embed/eEJjqNt_eQ8",
+        },
+        answer: {
+          text: "What is Snow College and Dixie State University?",
+          type: "text",
+          videoUrl: "",
+        },
         rank: 4,
       },
     ],
@@ -511,7 +551,13 @@ function setupBoard() {
 
     var list = document.createElement("ul");
     list.className = "list-group list-group-flush";
-    for (var j = 0; j < gameData[categories[i]].clues.length; j++) {
+
+    // Sort clues by rank
+    var sortedClues = gameData[categories[i]].clues.sort(
+      (a, b) => a.rank - b.rank
+    );
+
+    for (var j = 0; j < sortedClues.length; j++) {
       var link = document.createElement("a");
       link.setAttribute("href", "");
       link.setAttribute("data-toggle", "modal");
@@ -773,9 +819,14 @@ function ddbtn() {
     var modalBody = modal.find(".modal-body");
 
     if (clue.question.type === "video") {
+      var embedUrl = clue.question.videoUrl.replace(
+        "youtube.com/shorts/",
+        "youtube.com/embed/"
+      );
+
       modalBody.html(
         '<div class="video-container"><iframe width="560" height="315" src="' +
-          clue.question.videoUrl +
+          embedUrl +
           '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
       );
     } else {
@@ -818,6 +869,33 @@ function hideTeamSelector() {
   document.getElementById("modal-team-selector").style.height = "0%";
   document.getElementById("modal-team-selector").innerHTML = "";
 }
+
+function toggleTheme() {
+  const root = document.documentElement;
+  const themeButton = document.getElementById("themeToggle");
+
+  if (root.style.getPropertyValue("--theme-dark") === "#332539") {
+    root.style.setProperty("--theme-dark", "#1e3a8a");
+    root.style.setProperty("--theme-medium", "#2563eb");
+    root.style.setProperty("--theme-light", "#3b82f6");
+    root.style.setProperty("--theme-hover", "#60a5fa");
+    root.style.setProperty("--theme-list-bg", "#93c5fd");
+    root.style.setProperty("--theme-table-row", "#1e40af");
+    root.style.setProperty("--theme-score-table", "#3b82f6");
+    themeButton.innerHTML = "Switch to Purple Theme";
+  } else {
+    root.style.setProperty("--theme-dark", "#332539");
+    root.style.setProperty("--theme-medium", "#56486e");
+    root.style.setProperty("--theme-light", "#504168");
+    root.style.setProperty("--theme-hover", "#7a649d");
+    root.style.setProperty("--theme-list-bg", "rgb(114, 84, 139)");
+    root.style.setProperty("--theme-table-row", "#4f3e50");
+    root.style.setProperty("--theme-score-table", "#7a649d");
+    themeButton.innerHTML = "Switch to Blue Theme";
+  }
+}
+
+document.getElementById("themeToggle").addEventListener("click", toggleTheme);
 
 function rebuildTeamSelector() {
   var lbl = document.createElement("label");
